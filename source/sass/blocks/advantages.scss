@@ -1,0 +1,52 @@
+.advantages {
+  padding-bottom: 5%;
+}
+
+.advantages__title {
+  font-size: $h2-title-size;
+  text-align: center;
+}
+
+.advantages__list {
+  @include reset-list;
+}
+
+.advantages__item {
+  padding: 20% 7% 10%;
+  margin-bottom: 5%;
+
+  position: relative;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0px;
+    left: 23px;
+    width: 118px;
+    height: 99px;
+    background-size: cover;
+    background-repeat: no-repeat;
+  }
+
+  &:first-child::before {
+    background-image: url("/img/icon/01.svg");
+  }
+
+  &:nth-child(2)::before {
+    background-image: url("/img/icon/02.svg");
+    width: 149px;
+  }
+
+  &:last-child::before {
+    background-image: url("/img/icon/03.svg");
+    width: 149px;
+  }
+}
+
+.advantages__text {
+  margin: 0;
+}
