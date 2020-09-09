@@ -1,0 +1,198 @@
+@charset "UTF-8";
+/* @media */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box; }
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit; }
+
+body {
+  font-family: "Manrope", "Arial", sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  color: #000;
+  background-color: #fff;
+  margin: 0;
+  min-width: 320px; }
+
+a {
+  text-decoration: none; }
+
+img {
+  max-width: 100%;
+  height: auto; }
+
+picture {
+  display: block; }
+
+/* manrope regular (400) */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 400;
+  font-display: swap;
+  src: url("../fonts/manrope_latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/manrope_latin_cyrillic-regular.woff") format("woff"); }
+
+/* manrope bold (800) */
+@font-face {
+  font-family: "Manrope";
+  font-style: normal;
+  font-weight: 800;
+  font-display: swap;
+  src: url("../fonts/manrope_latin_cyrillic-800.woff2") format("woff2"), url("../manrope_latin_cyrillic-800.woff") format("woff"); }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  -webkit-clip-path: inset(100%);
+          clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden; }
+
+.container {
+  padding: 0 10px; }
+
+@media (min-width: 768px) {
+  .container {
+    padding: 0 20px; } }
+
+@media (min-width: 1300px) {
+  .container {
+    max-width: 1300px;
+    padding: 0 40px;
+    margin: 0 auto; } }
+
+.header {
+  padding-top: 10px; }
+
+.header__top {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.header__logo {
+  -ms-flex-item-align: end;
+      align-self: flex-end;
+  margin-bottom: 5%;
+  width: 37%; }
+
+.navigation {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+
+.navigation__list {
+  display: none; }
+
+.navigation__contacts {
+  -ms-flex-item-align: end;
+      align-self: flex-end; }
+
+.navigation__number {
+  color: #000;
+  font-weight: bold;
+  font-size: 4vw;
+  line-height: 2; }
+
+.navigation__city {
+  margin: 0;
+  font-size: 3.5vw;
+  line-height: 1.3;
+  color: #2fbcb1;
+  text-align: right; }
+
+.promo {
+  padding-top: 5%;
+  padding-bottom: 15%; }
+
+.promo__picture {
+  margin-bottom: 8%; }
+
+.promo__title {
+  margin: 0 0 5% 0;
+  font-size: 13vw; }
+
+.promo__text {
+  margin: 0 0 8% 0;
+  font-size: 4.9vw;
+  line-height: 1.2;
+  font-weight: 800; }
+
+.promo__link {
+  /*  Заменить градиенты */
+  display: block;
+  padding: 4.5%;
+  text-align: center;
+  background: linear-gradient(74deg, #5ec673 8%, #49bcb8 90%);
+  font-size: 5.5vw;
+  color: #fff; }
+
+.about-us__title {
+  font-size: 10vw;
+  text-align: center;
+  margin: 0 0 10% 0; }
+
+.about-us__user {
+  text-align: center;
+  margin-bottom: 10%; }
+
+.about-us__picture {
+  margin-bottom: 2%; }
+
+.about-us__user-name,
+.about-us__user-text,
+.about-us__studio-information {
+  margin: 0; }
+
+.about-us__user-name {
+  font-size: 5vw;
+  line-height: 1.5; }
+
+.about-us__user-text {
+  color: #4f4f4f;
+  font-size: 3.5vw;
+  line-height: 1.5; }
+
+.about-us__studio-information {
+  font-size: 3.7vw;
+  line-height: 1.6;
+  padding: 7% 4%;
+  margin: 0 4%;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  position: relative; }
+  .about-us__studio-information::before, .about-us__studio-information::after {
+    content: "";
+    position: absolute;
+    width: 21%;
+    height: 21%;
+    background-image: url("../img/quotes.jpg");
+    background-repeat: no-repeat;
+    background-size: contain; }
+  .about-us__studio-information::before {
+    top: -14%;
+    left: 2%; }
+  .about-us__studio-information::after {
+    -webkit-transform: rotate(-180deg);
+            transform: rotate(-180deg);
+    bottom: -12%;
+    right: 2%; }
+
+/*# sourceMappingURL=style.css.map */
