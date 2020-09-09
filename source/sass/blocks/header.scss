@@ -1,0 +1,14 @@
+.header {
+  padding-top: 10px;
+}
+
+.header__top {
+  display: flex;
+  flex-direction: column;
+}
+
+.header__logo {
+  align-self: flex-end;
+  margin-bottom: 5%;
+  width: 37%;
+}

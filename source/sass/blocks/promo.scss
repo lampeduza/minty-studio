@@ -1,0 +1,30 @@
+.promo {
+  padding-top: 5%;
+  padding-bottom: 15%;
+}
+
+.promo__picture {
+  margin-bottom: 8%;
+}
+
+.promo__title {
+  margin: 0 0 5% 0;
+  font-size: 13vw;
+}
+
+.promo__text {
+  margin: 0 0 8% 0;
+  font-size: 4.9vw;
+  line-height: 1.2;
+  font-weight: 800;
+}
+
+.promo__link {
+  /*  Заменить градиенты */
+  display: block;
+  padding: 4.5%;
+  text-align: center;
+  background: linear-gradient(74deg, rgba(94,198,115,1) 8%, rgba(73,188,184,1) 90%);
+  font-size: 5.5vw;
+  color: #fff;
+}
