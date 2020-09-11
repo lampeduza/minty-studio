@@ -1,0 +1,39 @@
+.steps {
+  padding: 0 7% 5% 0;
+}
+
+.steps__title {
+  margin: 0 0 10% 0;
+  font-size: $h2-title-size;
+  text-align: center;
+}
+
+.steps__list {
+  @include reset-list;
+  counter-reset: pages;
+}
+
+.steps__item {
+  font-size: 5vw;
+  line-height: 1.2;
+  margin-bottom: 6%;
+  padding-left: 15%;
+
+  position: relative;
+  counter-increment: pages;
+
+  &::before {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    content: counter(pages);
+    position: absolute;
+    top: 0;
+    left: 4%;
+    width: 7vw;
+    height: 7vw;
+    border-radius: 50%;
+    color: #fff;
+    background: linear-gradient(271.59deg, #45BCC4 0%, #60C56A 100%);
+  }
+}

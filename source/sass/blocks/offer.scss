@@ -1,0 +1,27 @@
+.offer__title {
+  margin: 0 0 10% 0;
+  font-size: $h2-title-size;
+  text-align: center;
+}
+
+.offer__information {
+  max-width: 620px;
+  margin: 0 auto;
+}
+
+.offer__img {
+  border-radius: 10px;
+  width: 100%;
+
+  &--gift {
+    margin-bottom: 10%;
+  }
+
+  &--cashback {
+    margin-bottom: 5%;
+  }
+
+  &--logo-sale {
+    margin-bottom: 10%;
+  }
+}

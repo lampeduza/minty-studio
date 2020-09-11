@@ -1,0 +1,36 @@
+.footer {
+  padding-bottom: 5%;
+}
+
+.footer__link {
+  color: #828282;
+  margin-bottom: 10%;
+  display: block;
+  font-size: 5vw;
+}
+
+.footer__social-list {
+  @include reset-list;
+}
+
+.footer__social-link {
+  display: block;
+  font-size: 4.5vw;
+  line-height: 1.6;
+  color: #828282;
+  padding-left: 10%;
+
+  position: relative;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: -15%;
+    left: -2%;
+    width: 135%;
+    height: 135%;
+    background-image: url("../img/icon/instagram.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+  }
+}

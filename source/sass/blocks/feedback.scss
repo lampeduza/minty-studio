@@ -1,0 +1,39 @@
+.feedback {
+  padding: 10% 0 15% 0;
+  border-bottom: 0.2vw solid #818181;
+}
+
+.feedback__item {
+  margin-bottom: 7%;
+}
+
+.feedback__label {
+  display: block;
+  font-size: 5vw;
+  margin-bottom: 3%;
+}
+
+.feedback__input,
+.feedback__area {
+  display: block;
+  width: 100%;
+  padding: 3.2% 2% 3.2% 4%;
+  font-size: 6vw;
+  border: 0.2vw solid #818181;
+
+  &::placeholder {
+    color: #cecece;
+  }
+}
+
+.feedback__area {
+  resize: vertical;
+  min-height: 90px;
+  width: 100%;
+  font-size: 5vw;
+}
+
+.feedback__button {
+  border: none;
+  width: 100%;
+}

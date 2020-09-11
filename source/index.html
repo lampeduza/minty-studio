@@ -144,19 +144,20 @@
         <h2 class="offer__title">Специальные предложения</h2>
         <div class="offer__information">
           <picture class="offer__picture">
-            <img class="offer__img" src="img/gift.jpg" width="auto" height="auto" alt="Рекламная компания в подарок при заказе сайта!">
+            <img class="offer__img offer__img--gift" src="img/gift.jpg" width="auto" height="auto" alt="Рекламная компания в подарок при заказе сайта!">
           </picture>
           <a class="offer__information-link" href="https://www.instagram.com/minty_studio_/" target="blank">
             <picture class="offer__picture">
-              <img class="offer__img" src="img/cashback.jpg" width="auto" height="auto" alt="Кэшбэк 10% за отзыв в социальных сетях">
+              <img class="offer__img offer__img--cashback" src="img/cashback.jpg" width="auto" height="auto" alt="Кэшбэк 10% за отзыв в социальных сетях">
             </picture>
           </a>
           <picture class="offer__picture">
-            <img class="offer__img" src="img/logo-sale.jpg" width="auto" height="auto" alt="Логотип за пол цены">
+            <img class="offer__img offer__img--logo-sale" src="img/logo-sale.jpg" width="auto" height="auto" alt="Логотип за пол цены">
           </picture>
         </div>
       </section>
       <section class="contacts" id="contacts">
+        <div class="container">
         <h2 class="contacts__title">Контакты</h2>
         <!-- contacts container-->
         <div class="contacts__information">
@@ -178,24 +179,25 @@
         <!-- feedback container -->
         <div class="contacts__feedback feedback">
           <form class="feedback__form" action="https://minty-studio.ru/" method="post">
-            <div class="feedback__name">
+            <div class="feedback__item feedback__name">
               <label class="feedback__label" for="name">Имя</label>
-              <input class="feedback__input" type="text" name="name" id="name">
+              <input class="feedback__input" type="text" name="name" id="name" placeholder="Екатерина">
             </div>
-            <div class="feedback__email">
+            <div class="feedback__item feedback__email">
               <label class="feedback__label" for="email">Email</label>
-              <input class="feedback__input" type="text" name="email" id="email">
+              <input class="feedback__input" type="text" name="email" id="email" placeholder="info@minty-studio.ru">
             </div>
-            <div class="feedback__comment">
+            <div class="feedback__item feedback__comment">
               <label class="feedback__label" for="comment">Комментарий</label>
-              <textarea name="comment" id="comment"></textarea>
+              <textarea class="feedback__area" name="comment" id="comment" placeholder="Здесь будет ваш комментарий"></textarea>
             </div>
-            <button class="feedback__button" type="button">Отправить</button>
+            <button class="feedback__button button" type="button">Отправить</button>
           </form>
         </div>
+      </div>
       </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
       <a class="footer__link" href="index.html">Minty studio, 2020</a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
