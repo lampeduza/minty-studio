@@ -312,13 +312,13 @@ picture {
     background-size: contain;
     background-repeat: no-repeat; }
   .advantages__item:first-child::before {
-    background-image: url("/img/icon/01.svg");
+    background-image: url("../img/icon/01.svg");
     width: 39%;
     height: 53%; }
   .advantages__item:nth-child(2)::before {
-    background-image: url("/img/icon/02.svg"); }
+    background-image: url("../img/icon/02.svg"); }
   .advantages__item:last-child::before {
-    background-image: url("/img/icon/03.svg"); }
+    background-image: url("../img/icon/03.svg"); }
 
 .advantages__text {
   margin: 0;
