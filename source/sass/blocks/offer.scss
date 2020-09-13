@@ -25,3 +25,25 @@
     margin-bottom: 10%;
   }
 }
+
+@media (min-width: $tablet-width) {
+  .offer__information {
+    max-width: 100%;
+    width: 60%;
+  }
+
+  .offer__title {
+    font-size: 4vw;
+  }
+
+  .offer__picture {
+    margin: 0 auto;
+    display: block;
+  }
+
+  .offer__img {
+    &--gift {
+      margin-bottom: 5%;
+    }
+  }
+}

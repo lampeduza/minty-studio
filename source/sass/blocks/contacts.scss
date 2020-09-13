@@ -21,7 +21,8 @@
 
 .contacts__item {
   padding-left: 10%;
-  margin-bottom: 4%;
+  margin-bottom: 7%;
+  font-size: 5vw;
 
   position: relative;
 
@@ -38,10 +39,12 @@
 
   &:first-child::before {
     background-image: url("../img/icon/phone.png");
+    top: -5%;
   }
 
   &:nth-child(2)::before {
     background-image: url("../img/icon/mail.png");
+    top: 10%;
   }
 
   &:last-child::before {
@@ -49,7 +52,7 @@
     width: 7vw;
     height: 7vw;
     left: -1%;
-    top: -30%;
+    top: -20%;
   }
 }
 
@@ -60,4 +63,66 @@
 
 .contacts__address {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) {
+  .contacts__title {
+    margin-bottom: 4%;
+  }
+
+  .contacts__information {
+    width: 95%;
+    margin: 0 auto;
+  }
+
+  .contacts__text {
+    font-size: 3vw;
+    line-height: 1.4;
+  }
+
+  .contacts__list {
+    display: flex;
+    margin-bottom: 0;
+  }
+
+  .contacts__item {
+    margin-right: 2%;
+    padding-left: 4.5%;
+    font-size: 1.7vw;
+
+    display: flex;
+
+    &:first-child {
+      width: 25%;
+    }
+
+    &:nth-child(2) {
+      width: 25%;
+    }
+
+    &:last-child {
+      width: 46%;
+      margin-right: 0;
+    }
+
+    &::before {
+      width: 3vw;
+      height: 3vw;
+    }
+
+    &:first-child::before {
+      top: -40%;
+    }
+
+    &:nth-child(2)::before {
+      top: -15%;
+    }
+
+    &:last-child::before {
+      width: 4vw;
+      height: 4vw;
+      top: -70%;
+      left: 0;
+    }
+  }
 }

@@ -12,3 +12,20 @@
     color: rgb(255, 3, 3);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .text-list {
+    width: 59%;
+    margin: 0 auto 5% auto;
+  }
+
+  .text-list__item {
+    font-size: 2.5vw;
+    line-height: 1;
+    margin-bottom: 3%;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
+}

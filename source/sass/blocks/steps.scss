@@ -37,3 +37,24 @@
     background: linear-gradient(271.59deg, #45BCC4 0%, #60C56A 100%);
   }
 }
+
+@media (min-width: $tablet-width) {
+  .steps__list {
+    width: 70%;
+    margin: 0 auto;
+  }
+
+  .steps__item {
+    font-size: 3vw;
+    margin-bottom: 3%;
+
+    &::before {
+      width: 3vw;
+      height: 3vw;
+      font-size: 2vw;
+      top: 50%;
+      transform: translateY(-50%);
+      left: 7%;
+    }
+  }
+}

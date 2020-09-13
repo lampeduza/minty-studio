@@ -34,17 +34,17 @@
   }
 
   &:first-child::before {
-    background-image: url("/img/icon/01.svg");
+    background-image: url("../img/icon/01.svg");
     width: 39%;
     height: 53%;
   }
 
   &:nth-child(2)::before {
-    background-image: url("/img/icon/02.svg");
+    background-image: url("../img/icon/02.svg");
   }
 
   &:last-child::before {
-    background-image: url("/img/icon/03.svg");
+    background-image: url("../img/icon/03.svg");
   }
 }
 
@@ -52,4 +52,34 @@
   margin: 0;
   font-size: 4.3vw;
   line-height: 1.2;
+}
+
+
+@media (min-width: $tablet-width) {
+  .advantages__list {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .advantages__item {
+    padding: 20% 4% 5%;
+
+    &:first-child::before {
+      width: 20%;
+      height: 33%;
+    }
+
+    &::before {
+      left: 3%;
+      top: 0%;
+      width: 25%;
+      height: 30%;
+    }
+  }
+
+  .advantages__text {
+    font-size: 2.5vw;
+  }
 }

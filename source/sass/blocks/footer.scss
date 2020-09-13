@@ -27,10 +27,43 @@
     position: absolute;
     top: -15%;
     left: -2%;
-    width: 135%;
+    width: 100%;
     height: 135%;
     background-image: url("../img/icon/instagram.png");
     background-repeat: no-repeat;
     background-size: contain;
+  }
+}
+
+@media (min-width: $tablet-width) {
+  .footer {
+    padding-bottom: 9%;
+  }
+
+  .footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .footer__link {
+    font-size: 3vw;
+    margin-bottom: 0;
+    width: 30%;
+  }
+
+  .footer__social-list {
+    width: 61%;
+  }
+
+  .footer__social-link {
+    font-size: 3vw;
+    line-height: 1;
+    padding-left: 7%;
+
+    &::before {
+      top: -40%;
+      left: -5%;
+      height: 200%;
+    }
   }
 }

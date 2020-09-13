@@ -37,3 +37,25 @@
   border: none;
   width: 100%;
 }
+
+@media (min-width: $tablet-width) {
+  .feedback__form {
+    width: 80%;
+    margin: 0 auto;
+  }
+
+  .feedback__label {
+    font-size: 3vw;
+  }
+
+  .feedback__input {
+    font-size: 4vw;
+    padding: 2%;
+  }
+
+  .feedback__area {
+    font-size: 3vw;
+    padding: 2%;
+    min-height: 120px;
+  }
+}

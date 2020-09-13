@@ -1,9 +1,14 @@
 .button {
-  /*  Заменить градиенты */
   display: block;
   padding: 4.5%;
   text-align: center;
   font-size: 5.5vw;
   color: #fff;
   background: linear-gradient(271.59deg, #45BCC4 0%, #60C56A 100%);
+}
+
+@media (min-width: $tablet-width) {
+  .button {
+    font-size: 4.5vw;
+  }
 }
