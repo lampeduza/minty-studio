@@ -452,9 +452,15 @@ picture {
     background-image: url("../img/icon/03.svg"); }
 
 .advantages__text {
-  margin: 0;
+  margin: 0 0 2% 0;
   font-size: 4.3vw;
   line-height: 1.2; }
+  .advantages__text:last-child {
+    margin-bottom: 0; }
+
+.advantages__text-accent {
+  display: block;
+  margin-bottom: 3%; }
 
 @media (min-width: 768px) {
   .advantages__list {
@@ -579,7 +585,9 @@ picture {
 .contacts__text {
   font-size: 5vw;
   line-height: 1.2;
-  margin: 0 0 10% 0; }
+  margin: 0 0 3% 0; }
+  .contacts__text:last-of-type {
+    margin-bottom: 10%; }
 
 .contacts__list {
   margin: 0;
@@ -629,7 +637,10 @@ picture {
     margin: 0 auto; }
   .contacts__text {
     font-size: 3vw;
-    line-height: 1.4; }
+    line-height: 1.4;
+    margin-bottom: 1%; }
+    .contacts__text:last-of-type {
+      margin-bottom: 5%; }
   .contacts__list {
     display: -webkit-box;
     display: -ms-flexbox;
