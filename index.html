@@ -9,7 +9,9 @@
   <body>
     <header class="header">
       <div class="header__top container">
-        <img class="header__logo" src="img/icon/minty-studio-logo.png" width="101" height="55" alt="Логотип сайта Minty Studio">
+        <a href="index.html" class="header__link">
+          <img class="header__logo" src="img/icon/minty-studio-logo.png" width="101" height="55" alt="Логотип сайта Minty Studio">
+        </a>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
             <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
@@ -32,7 +34,7 @@
           <img class="promo__img" src="img/laptop-image.jpg" width="100%" height="100%" alt="Изображения на котором показан процесс разработки сайта для клиента">
           <!-- 300 x 200 -->
         </picture>
-        <div class="promo__infomation">
+        <div class="promo__information">
           <h1 class="promo__title">Свeжий взгляд на интeрнет-маркeтинг</h1>
           <p class="promo__text">Делаем сайты, которые работают!</p>
           <a class="promo__link button" href="#contacts">Оставить заявку</a>
@@ -48,7 +50,11 @@
             <h3 class="about-us__user-name">Екатерина Воробьёва</h3>
             <p class="about-us__user-text">маркетолог студии Minty</p>
           </div>
-          <p class="about-us__studio-information">Minty studio — это группа профессионалов, работающих на продвижение вашего бизнеса. Мы отказались от шаблонных решений, каждый проект создается индивидуально в зависимости от потребностей клиента и конкурентной среды.</p>
+          <div class="about-us__studio-information">
+            <p class="about-us__studio-information-text">В Minty studio мы не просто создаем сайты – мы приводим клиентов в ваш бизнес. При работе над проектом мы узнаем сильные стороны вашего предложения, отличия от конкурентов, целевую аудиторию и другие особенности.</p>
+          <p class="about-us__studio-information-text">На основе собранной информации и нашего опыта мы создаем для вас сайт с уникальными текстами и адаптивным дизайном.</p>
+          <p class="about-us__studio-information-text">После согласования с клиентом и внесения правок мы настраиваем системы аналитики и контекстную рекламу, чтобы обеспечить вам приток новых заявок.</p>
+        </div>
         </div>
       </section>
       <section class="services" id="services">
@@ -60,10 +66,11 @@
             </picture>
             <h3 class="services__subtitle">Продающий сайт под ключ</h3>
             <ul class="services__text-list text-list">
-              <li class="text-list__item">Мы делаем для Вас проект под ключ.</li>
-              <li class="text-list__item">Разрабатываем дизайн-макет сайта и пишем необходимые тексты.</li>
-              <li class="text-list__item">Устанавливаем и настраиваем все необходимые сервисы: Яндекс.Метрика, Колл-трекинг, Яндекс.Вебмастер и другие.</li>
-              <li class="text-list__item">После полного согласования и запуска сайта мы в течение <strong class="text-list__item--marked">3 месяцев</strong> тестируем сайт и вносим коррективы, если они необходимы.</li>
+              <li class="text-list__item">Мы делаем для Вас проект под ключ</li>
+              <li class="text-list__item">Разрабатываем техническое задание на дизайн, пишем необходимые тексты</li>
+              <li class="text-list__item">Создаем сайт с резиновым дизайном отзывчивым интерфейсом.</li>
+              <li class="text-list__item">Устанавливаем и настраиваем все необходимые сервисы: Яндекс.Метрика, Колл-трекинг, Яндекс.Вебмастер и другие</li>
+              <li class="text-list__item">После полного согласования и запуска сайта мы в течение <strong class="text-list__item--marked">2 месяцев</strong> тестируем сайт и вносим коррективы, если они необходимы</li>
             </ul>
             <p class="services__item-price">38000 ₽</p>
           </li>
@@ -73,11 +80,10 @@
             </picture>
             <h3 class="services__subtitle">Контекстная реклама</h3>
             <ul class="services__text-list text-list">
-              <li class="text-list__item">Анализ маркетинговой эффективности сайта</li>
-              <li class="text-list__item">рекомендации по повышению конверсии</li>
+              <li class="text-list__item">Мы анализируем сайт вашей компании, даем рекомендации по повышению конверсии, если это необходимо</li>
+              <li class="text-list__item">Помогаем установить и настроить системы аналитики</li>
               <li class="text-list__item">Разработка и запуск рекламной кампании Яндекс и Google</li>
-              <li class="text-list__item">Установка систем аналитики</li>
-              <li class="text-list__item">Настройка и доработка рекламных кампаний в течении месяца после запуска</li>
+              <li class="text-list__item">Настраиваем и дорабатываем рекламные кампании в течении месяца после запуска</li>
             </ul>
             <p class="services__item-price">9000 ₽</p>
           </li>
@@ -87,9 +93,10 @@
             </picture>
             <h3 class="services__subtitle">Разработка логотипа</h3>
             <ul class="services__text-list text-list">
-              <li class="text-list__item">Создание 3-х вариантов логотипа в рамках одной концепции</li>
-              <li class="text-list__item">Предоставление исходников</li>
-              <li class="text-list__item">Подбор шрифтов и цветов для создания дизайн-материалов</li>
+              <li class="text-list__item">Вместе с вами проясняем – какие задачи должен решать логотип</li>
+              <li class="text-list__item">Заполняем бриф по созданию логотипа, в котором отразятся все ваши предпочтения</li>
+              <li class="text-list__item">Создаем 3 варианта логотипа в рамках одной концепции</li>
+              <li class="text-list__item">Согласовываем правки, подбираем шрифты и цвета для создания дизайн-материалов, предоставляем исходники</li>
             </ul>
             <p class="services__item-price">8000 ₽</p>
           </li>
@@ -98,15 +105,23 @@
           <tbody class="services__table-body">
           <tr class="services__table-row">
             <td class="services__table-data services__table-cell">Интернет-магазин под ключ</td>
-            <td class="services__table-price services__table-cell">от 42 000 ₽</td>
+            <td class="services__table-price services__table-cell">по запросу</td>
           </tr>
           <tr class="services__table-row">
             <td class="services__table-data services__table-cell">Многостраничный сайт</td>
-            <td class="services__table-price services__table-cell">от 38 000 ₽</td>
+            <td class="services__table-price services__table-cell">по запросу</td>
           </tr>
           <tr class="services__table-row">
             <td class="services__table-data services__table-cell">Айдентика</td>
             <td class="services__table-price services__table-cell">от 15 000 ₽</td>
+          </tr>
+          <tr class="services__table-row">
+            <td class="services__table-data services__table-cell">Внесение правок на сайт по истечению сервисного периода</td>
+            <td class="services__table-price services__table-cell">по запросу</td>
+          </tr>
+          <tr class="services__table-row">
+            <td class="services__table-data services__table-cell">Сопровождение рекламной кампании </td>
+            <td class="services__table-price services__table-cell">от 8 000 ₽</td>
           </tr>
           <tr class="services__table-row">
             <td class="services__table-data services__table-cell">Web банер</td>
@@ -133,11 +148,11 @@
       <section class="steps">
         <h2 class="steps__title">Порядок работы</h2>
         <ul class="steps__list">
-          <li class="steps__item">Консультация</li>
+          <li class="steps__item">Консультация и заполнение технического задания</li>
           <li class="steps__item">Заполнение технического задания</li>
           <li class="steps__item">Предварительный расчет стоимости ЛИДа</li>
           <li class="steps__item">Разработка и согласование</li>
-          <li class="steps__item">Сервисное обслуживание и внесение корректировок в течение месяца после запуска</li>
+          <li class="steps__item">Сервисное обслуживание и внесение корректировок в течение 2 месяцев после запуска</li>
         </ul>
       </section>
       <section class="offer" id="stock">
@@ -197,13 +212,15 @@
       </div>
       </section>
     </main>
-    <footer class="footer container">
+    <footer class="footer">
+      <div class="footer__wrapper container">
       <a class="footer__link" href="index.html">Minty studio, 2020</a>
       <ul class="footer__social-list">
         <li class="footer__social-item">
           <a class="footer__social-link" href="https://www.instagram.com/minty_studio_/">Присоединяйтесь к нам в Instagram</a>
         </li>
       </ul>
+    </div>
     </footer>
   </body>
 </html>
