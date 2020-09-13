@@ -11,7 +11,11 @@
 .contacts__text {
   font-size: 5vw;
   line-height: 1.2;
-  margin: 0 0 10% 0;
+  margin: 0 0 3% 0;
+
+  &:last-of-type {
+    margin-bottom: 10%;
+  }
 }
 
 .contacts__list {
@@ -78,6 +82,11 @@
   .contacts__text {
     font-size: 3vw;
     line-height: 1.4;
+    margin-bottom: 1%;
+
+    &:last-of-type {
+      margin-bottom: 5%;
+    }
   }
 
   .contacts__list {
