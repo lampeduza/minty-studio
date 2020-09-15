@@ -1,5 +1,5 @@
 .services {
-  padding: 15% 5%;
+  padding: 15% 3%;
 }
 
 .services__title {
@@ -14,7 +14,7 @@
 }
 
 .services__img {
-  width: 92%;
+  width: 70%;
   height: auto;
 }
 
@@ -83,7 +83,7 @@
 
 @media (min-width: $tablet-width) {
   .services {
-    padding: 10% 3%;
+    padding: 10% 4%;
   }
 
   .services__title {
@@ -136,5 +136,72 @@
   .services__link {
     width: 50%;
     margin: 0 auto;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .services__title {
+    font-size: 5vw;
+    margin-bottom: 7%;
+  }
+
+  .services__list {
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+  }
+
+  .services__item {
+    width: 32%;
+    padding: 2%;
+    margin-right: 2%;
+
+    display: flex;
+    flex-direction: column;
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .services__picture {
+    margin-bottom: 5%;
+  }
+
+  .services__img {
+    width: 50%
+  }
+
+  .services__subtitle {
+    margin-bottom: 5%;
+    font-size: 1.6vw;
+    text-align: left;
+  }
+
+  .services__item-price {
+    margin-top: auto;
+    font-size: 3vw;
+  }
+
+  .services__table {
+    margin-bottom: 5%;
+  }
+
+  .services__table-row {
+    padding: 4% 0;
+    justify-content: space-between;
+  }
+
+  .services__table-cell {
+    font-size: 2vw;
+  }
+
+  .services__table-price {
+    width: 25%;
+  }
+
+  .services__link {
+    width: 30%;
+    font-size: 2vw;
   }
 }

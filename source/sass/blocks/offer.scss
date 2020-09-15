@@ -1,3 +1,7 @@
+.offer {
+  padding: 0 3%;
+}
+
 .offer__title {
   margin: 0 0 10% 0;
   font-size: $h2-title-size;
@@ -7,29 +11,36 @@
 .offer__information {
   max-width: 620px;
   margin: 0 auto;
+  display: flex;
+}
+
+.offer__gift {
+  margin-right: 2%;
+  width: 40%;
+}
+
+.offer__double {
+  width: 60%;
 }
 
 .offer__img {
   border-radius: 10px;
   width: 100%;
+}
 
-  &--gift {
-    margin-bottom: 10%;
-  }
-
-  &--cashback {
-    margin-bottom: 5%;
-  }
-
-  &--logo-sale {
-    margin-bottom: 10%;
-  }
+.offer__information-link {
+  display: block;
+  margin-bottom: 4.7%;
 }
 
 @media (min-width: $tablet-width) {
+  .offer {
+    padding: 0 4%;
+  }
+
   .offer__information {
     max-width: 100%;
-    width: 60%;
+    width: 100%;
   }
 
   .offer__title {
@@ -40,10 +51,12 @@
     margin: 0 auto;
     display: block;
   }
+}
 
-  .offer__img {
-    &--gift {
-      margin-bottom: 5%;
-    }
+@media (min-width: $desktop-width) {
+  .offer__title {
+    font-size: 5vw;
   }
+
+
 }

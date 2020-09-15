@@ -1,14 +1,17 @@
-.header__top {
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  justify-content: space-between;
-
+.header {
   position: fixed;
   top: 0;
   background-color: white;
   width: 100%;
   z-index: 10;
+  padding: 2% 3%;
+}
+
+.header__top {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .header__link {
@@ -21,7 +24,7 @@
 
 @media (min-width: $tablet-width) {
   .header {
-    padding-bottom: 2%;
+    padding: 2% 4%;
   }
 
   .header__link {
@@ -30,5 +33,19 @@
 
   .header__logo {
     width: 100%;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .header {
+    padding-bottom: 0;
+  }
+
+  .header__top {
+    padding-top: 2%;
+  }
+
+  .header__link {
+    width: 15%;
   }
 }

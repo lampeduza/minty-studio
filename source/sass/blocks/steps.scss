@@ -1,5 +1,5 @@
 .steps {
-  padding: 0 7% 5% 0;
+  padding: 0 3% 5% 3%;
 }
 
 .steps__title {
@@ -39,14 +39,19 @@
 }
 
 @media (min-width: $tablet-width) {
+  .steps {
+    padding: 0 4% 5% 4%;
+  }
+
   .steps__list {
-    width: 70%;
+    width: 90%;
     margin: 0 auto;
   }
 
   .steps__item {
     font-size: 3vw;
     margin-bottom: 3%;
+    padding-left: 14%;
 
     &::before {
       width: 3vw;
@@ -56,5 +61,25 @@
       transform: translateY(-50%);
       left: 7%;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .steps {
+    padding: 0 4% 10%;
+  }
+
+  .steps__title {
+    font-size: 5vw;
+    margin-bottom: 5%;
+  }
+
+  .steps__list {
+    width: 100%;
+  }
+
+  .steps__item {
+    font-size: 1.8vw;
+    margin-bottom: 2%;
   }
 }

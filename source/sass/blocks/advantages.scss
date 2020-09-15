@@ -1,5 +1,5 @@
 .advantages {
-  padding-bottom: 5%;
+  padding: 0 3% 5% 3%;
 }
 
 .advantages__title {
@@ -13,7 +13,7 @@
 }
 
 .advantages__item {
-  padding: 70px 7% 10%;
+  padding: 70px 3% 10%;
   margin-bottom: 5%;
 
   position: relative;
@@ -65,8 +65,12 @@
 
 
 @media (min-width: $tablet-width) {
+  .advantages {
+    padding: 0 4% 5% 4%;
+  }
+
   .advantages__list {
-    width: 70%;
+    width: 80%;
     display: flex;
     flex-direction: column;
     margin: 0 auto;
@@ -90,5 +94,47 @@
 
   .advantages__text {
     font-size: 2.5vw;
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .advantages {
+    padding: 0 4%;
+  }
+  .advantages__title {
+    font-size: 5vw;
+  }
+
+  .advantages__list {
+    width: 100%;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  .advantages__item {
+    padding: 0;
+    width: 32%;
+    padding: 10% 2% 5%;
+    margin-right: 2%;
+
+    &::before {
+      width: 29%;
+      height: 35%;
+      top: 5%;
+    }
+
+    &:first-child::before {
+      width: 34%;
+      height: 16%;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
+  }
+
+  .advantages__text {
+    font-size: 1.3vw;
+    margin-bottom: 5%;
   }
 }

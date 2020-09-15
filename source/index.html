@@ -9,7 +9,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__top container">
+      <div class="header__top">
         <a href="index.html" class="header__link">
           <img class="header__logo" src="img/icon/minty-studio-logo.png" width="101" height="55" alt="Логотип сайта Minty Studio">
         </a>
@@ -18,7 +18,7 @@
             <li class="navigation__item"><a class="navigation__link" href="#about">О нас</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#services">Услуги</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#advantages">Преимущества</a></li>
-            <li class="navigation__item"><a class="navigation__link" href="#stock"></a>Акции</li>
+            <li class="navigation__item"><a class="navigation__link" href="#stock">Акции</a></li>
             <li class="navigation__item"><a class="navigation__link" href="#contacts">Контакты</a></li>
           </ul>
           <div class="navigation__contacts">
@@ -30,7 +30,7 @@
     </header>
     <main class="main">
       <!-- promo -->
-      <section class="promo container">
+      <section class="promo">
         <picture class="promo__picture">
           <img class="promo__img" src="img/laptop-image.jpg" width="100%" height="100%" alt="Изображения на котором показан процесс разработки сайта для клиента">
           <!-- 300 x 200 -->
@@ -41,7 +41,7 @@
           <a class="promo__link button" href="#contacts">Оставить заявку</a>
         </div>
       </section>
-      <section class="about-us container" id="about">
+      <section class="about-us" id="about">
         <h2 class="about-us__title">О нас</h2>
         <div class="about-us__information">
           <div class="about-us__user">
@@ -165,21 +165,24 @@
       <section class="offer" id="stock">
         <h2 class="offer__title">Специальные предложения</h2>
         <div class="offer__information">
+          <div class="offer__gift">
           <picture class="offer__picture">
-            <img class="offer__img offer__img--gift" src="img/gift.jpg" width="auto" height="auto" alt="Рекламная компания в подарок при заказе сайта!">
+            <img class="offer__img" src="img/gift.jpg" width="auto" height="auto" alt="Рекламная компания в подарок при заказе сайта!">
           </picture>
+        </div>
+
+        <div class="offer__double">
           <a class="offer__information-link" href="https://www.instagram.com/minty_studio_/" target="blank">
             <picture class="offer__picture">
-              <img class="offer__img offer__img--cashback" src="img/cashback.jpg" width="auto" height="auto" alt="Кэшбэк 10% за отзыв в социальных сетях">
+              <img class="offer__img" src="img/cashback.jpg" width="auto" height="auto" alt="Кэшбэк 10% за отзыв в социальных сетях">
             </picture>
           </a>
           <picture class="offer__picture">
-            <img class="offer__img offer__img--logo-sale" src="img/logo-sale.jpg" width="auto" height="auto" alt="Логотип за пол цены">
+            <img class="offer__img" src="img/logo-sale.jpg" width="auto" height="auto" alt="Логотип за пол цены">
           </picture>
         </div>
       </section>
       <section class="contacts" id="contacts">
-        <div class="container">
         <h2 class="contacts__title">Контакты</h2>
         <!-- contacts container-->
         <div class="contacts__information">
@@ -216,11 +219,10 @@
             <button class="feedback__button button" type="button">Отправить</button>
           </form>
         </div>
-      </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__wrapper container">
+      <div class="footer__wrapper">
       <a class="footer__link" href="index.html">Minty studio, 2020</a>
       <ul class="footer__social-list">
         <li class="footer__social-item">

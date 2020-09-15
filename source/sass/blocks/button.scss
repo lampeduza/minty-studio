@@ -12,3 +12,11 @@
     font-size: 4.5vw;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .button {
+    font-size: 1.5vw;
+    padding: 2.5%;
+    width: 50%;
+  }
+}

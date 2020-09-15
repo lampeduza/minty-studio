@@ -15,7 +15,7 @@
 
 @media (min-width: $tablet-width) {
   .text-list {
-    width: 59%;
+    width: 70%;
     margin: 0 auto 5% auto;
   }
 
@@ -27,5 +27,18 @@
     &:last-child {
       margin-bottom: 0;
     }
+  }
+}
+
+@media (min-width: $desktop-width) {
+  .text-list {
+    width: auto;
+    margin: 0 0 10% 0;
+  }
+
+  .text-list__item {
+    margin-bottom: 3%;
+    font-size: 1.2vw;
+    line-height: 1.3;
   }
 }

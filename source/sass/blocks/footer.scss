@@ -2,6 +2,10 @@
   padding-bottom: 5%;
 }
 
+.footer__wrapper {
+  padding: 0 3%;
+}
+
 .footer__link {
   color: #828282;
   margin-bottom: 10%;
@@ -43,6 +47,7 @@
   .footer__wrapper {
     display: flex;
     justify-content: space-between;
+    padding: 0 4%;
   }
 
   .footer__link {
