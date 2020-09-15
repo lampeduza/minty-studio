@@ -106,7 +106,7 @@
   }
 
   .advantages__list {
-    width: 100%;
+    width: 75%;
     flex-direction: row;
     flex-wrap: wrap;
   }
@@ -124,8 +124,8 @@
     }
 
     &:first-child::before {
-      width: 34%;
-      height: 16%;
+      width: 25%;
+      height: 15%;
     }
 
     &:last-child {

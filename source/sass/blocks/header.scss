@@ -38,11 +38,7 @@
 
 @media (min-width: $desktop-width) {
   .header {
-    padding-bottom: 0;
-  }
-
-  .header__top {
-    padding-top: 2%;
+    padding: 0 4%;
   }
 
   .header__link {
