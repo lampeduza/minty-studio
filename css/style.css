@@ -121,7 +121,7 @@ picture {
   .header {
     padding: 0 4%; }
   .header__link {
-    width: 25%; }
+    width: 20%; }
   .header__logo {
     width: 100%; } }
 
@@ -232,7 +232,7 @@ picture {
         -ms-flex-pack: justify;
             justify-content: space-between;
     padding: 0 4% 5% 4%;
-    margin-top: 17%; }
+    margin-top: 12%; }
   .promo__picture {
     width: 45%; }
   .promo__information {
@@ -246,7 +246,7 @@ picture {
 
 @media (min-width: 1300px) {
   .promo {
-    margin-top: 8%;
+    margin-top: 10%;
     padding: 0 4% 0 0; }
   .promo__picture {
     width: 50%; }
@@ -536,7 +536,7 @@ picture {
         flex-wrap: wrap;
     margin-bottom: 5%;
     width: 80%;
-    margin: 0 auto 5% auto; }
+    margin: 0 auto; }
   .services__item {
     width: 32%;
     padding: 0.5%;
@@ -694,7 +694,7 @@ picture {
   .advantages__title {
     font-size: 5vw; }
   .advantages__list {
-    width: 75%;
+    width: 87%;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
@@ -704,7 +704,7 @@ picture {
   .advantages__item {
     padding: 0;
     width: 32%;
-    padding: 10% 2% 5%;
+    padding: 10% 1% 5%;
     margin-right: 2%; }
     .advantages__item::before {
       width: 29%;
@@ -789,7 +789,20 @@ picture {
     width: 80%; }
   .steps__item {
     font-size: 1.8vw;
-    margin-bottom: 2%; } }
+    margin-bottom: 5%;
+    position: relative; }
+    .steps__item::after {
+      content: "";
+      position: absolute;
+      top: 135%;
+      left: 9%;
+      background-color: #c4c4c4;
+      height: 105%;
+      width: 0.3%; }
+    .steps__item:nth-child(4)::after {
+      height: 155%; }
+    .steps__item:last-child::after {
+      display: none; } }
 
 .offer {
   padding: 0 3%; }
@@ -940,6 +953,7 @@ picture {
   .contacts {
     width: 90%;
     margin: 0 auto;
+    padding-bottom: 5%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -947,14 +961,16 @@ picture {
         flex-wrap: wrap;
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
-            justify-content: space-between; }
+            justify-content: space-between;
+    border-bottom: .2vw solid #818181; }
   .contacts__title {
     font-size: 5vw;
     display: block;
     width: 100%; }
   .contacts__information {
     width: 47%;
-    margin: 0; }
+    margin: 0;
+    padding-top: 3%; }
   .contacts__text {
     font-size: 1.6vw;
     line-height: 1.2;
@@ -1150,5 +1166,9 @@ picture {
     height: 4vw; }
   .footer__social-text {
     font-size: 2vw; } }
+
+@media (min-width: 1300px) {
+  .footer {
+    padding-top: 5%; } }
 
 /*# sourceMappingURL=style.css.map */

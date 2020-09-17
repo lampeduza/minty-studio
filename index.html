@@ -11,7 +11,10 @@
     <header class="header">
       <div class="header__top">
         <a href="index.html" class="header__link">
-          <img class="header__logo" src="img/icon/minty-studio-logo.png" width="101" height="55" alt="Логотип сайта Minty Studio">
+          <picture>
+            <source type="image/webp" srcset="img/icon/minty-studio-logo.webp">
+            <img class="header__logo" src="img/icon/minty-studio-logo.png" width="101" height="55" alt="Логотип сайта Minty Studio">
+          </picture>
         </a>
         <nav class="header__navigation navigation">
           <ul class="navigation__list">
@@ -32,6 +35,7 @@
       <!-- promo -->
       <section class="promo">
         <picture class="promo__picture">
+          <source type="image/webp" srcset="img/laptop-image.webp">
           <img class="promo__img" src="img/laptop-image.jpg" width="100%" height="100%" alt="Изображения на котором показан процесс разработки сайта для клиента">
           <!-- 300 x 200 -->
         </picture>
@@ -46,6 +50,7 @@
         <div class="about-us__information">
           <div class="about-us__user">
             <picture class="about-us__picture">
+              <source type="image/webp" srcset="img/person.webp">
               <img class="about-us__img" src="img/person.png" width="26.5%" height="auto" alt="Фотография Екатерины Воробьёвой">
             </picture>
             <h3 class="about-us__user-name">Екатерина Воробьёва</h3>
@@ -63,6 +68,7 @@
         <ul class="services__list">
           <li class="services__item">
             <picture class="services__picture">
+              <source type="image/webp" srcset="img/icon/site.webp">
               <img class="services__img" src="img/icon/site.png" width="auto" height="auto" alt="Изображение продающего сайта под ключ">
             </picture>
             <h3 class="services__subtitle">Продающий сайт под ключ</h3>
@@ -77,19 +83,21 @@
           </li>
           <li class="services__item">
             <picture class="services__picture">
+              <source type="image/webp" srcset="img/icon/advertising.webp">
               <img class="services__img" src="img/icon/advertising.png" width="190" height="170" alt="Изображение, которое несет в себе эффективность контекстной рекламы">
             </picture>
             <h3 class="services__subtitle">Контекстная реклама</h3>
             <ul class="services__text-list text-list">
               <li class="text-list__item">Мы анализируем сайт вашей компании, даем рекомендации по повышению конверсии, если это необходимо</li>
               <li class="text-list__item">Помогаем установить и настроить системы аналитики</li>
-              <li class="text-list__item">Разработка и запуск рекламной кампании Яндекс и Google</li>
+              <li class="text-list__item">Разрабатываем и запускаем рекламные кампании Яндекс и Google</li>
               <li class="text-list__item">Настраиваем и дорабатываем рекламные кампании в течении месяца после запуска</li>
             </ul>
             <p class="services__item-price">9000 ₽</p>
           </li>
           <li class="services__item">
             <picture class="services__picture">
+              <source type="image/webp" srcset="img/icon/create-logo.webp">
               <img class="services__img" src="img/icon/create-logo.png" width="auto" height="auto" alt="Изображение разработки логотипа">
             </picture>
             <h3 class="services__subtitle">Разработка логотипа</h3>
@@ -97,7 +105,7 @@
               <li class="text-list__item">Вместе с вами проясняем – какие задачи должен решать логотип</li>
               <li class="text-list__item">Заполняем бриф по созданию логотипа, в котором отразятся все ваши предпочтения</li>
               <li class="text-list__item">Создаем 3 варианта логотипа в рамках одной концепции</li>
-              <li class="text-list__item">Согласовываем правки, подбираем шрифты и цвета для создания дизайн-материалов, предоставляем исходники</li>
+              <li class="text-list__item">Проводим согласование, подбираем шрифты и цвета для создания дизайн-материалов, предоставляем исходники</li>
             </ul>
             <p class="services__item-price">8000 ₽</p>
           </li>
@@ -155,7 +163,7 @@
       <section class="steps">
         <h2 class="steps__title">Порядок работы</h2>
         <ul class="steps__list">
-          <li class="steps__item">Консультация и заполнение технического задания</li>
+          <li class="steps__item">Консультация и оценка спроса</li>
           <li class="steps__item">Заполнение технического задания</li>
           <li class="steps__item">Предварительный расчет стоимости ЛИДа</li>
           <li class="steps__item">Разработка и согласование</li>
@@ -167,6 +175,7 @@
         <div class="offer__information">
           <div class="offer__gift">
           <picture class="offer__picture">
+            <source type="image/webp" srcset="img/gift.webp">
             <img class="offer__img" src="img/gift.jpg" width="auto" height="auto" alt="Рекламная компания в подарок при заказе сайта!">
           </picture>
         </div>
@@ -174,10 +183,12 @@
         <div class="offer__double">
           <a class="offer__information-link" href="https://www.instagram.com/minty_studio_/" target="blank">
             <picture class="offer__picture">
+              <source type="image/webp" srcset="img/cashback.webp">
               <img class="offer__img" src="img/cashback.jpg" width="auto" height="auto" alt="Кэшбэк 10% за отзыв в социальных сетях">
             </picture>
           </a>
           <picture class="offer__picture">
+            <source type="image/webp" srcset="img/logo-sale.webp">
             <img class="offer__img" src="img/logo-sale.jpg" width="auto" height="auto" alt="Логотип за пол цены">
           </picture>
         </div>
@@ -206,15 +217,15 @@
           <form class="feedback__form" action="https://minty-studio.ru/" method="post">
             <div class="feedback__item feedback__name">
               <label class="feedback__label" for="name">Имя</label>
-              <input class="feedback__input" type="text" name="name" id="name" placeholder="Екатерина">
+              <input class="feedback__input" type="text" name="name" id="name">
             </div>
             <div class="feedback__item feedback__email">
               <label class="feedback__label" for="email">E-mail</label>
-              <input class="feedback__input" type="text" name="email" id="email" placeholder="info@minty-studio.ru">
+              <input class="feedback__input" type="text" name="email" id="email">
             </div>
             <div class="feedback__item feedback__comment">
               <label class="feedback__label" for="comment">Комментарий</label>
-              <textarea class="feedback__area" name="comment" id="comment" placeholder="Здесь будет ваш комментарий"></textarea>
+              <textarea class="feedback__area" name="comment" id="comment"></textarea>
             </div>
             <button class="feedback__button button" type="button">Отправить</button>
           </form>
