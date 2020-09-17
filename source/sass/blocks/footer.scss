@@ -77,3 +77,9 @@
     font-size: 2vw;
   }
 }
+
+@media (min-width: $desktop-width) {
+  .footer {
+    padding-top: 5%;
+  }
+}
