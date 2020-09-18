@@ -57,6 +57,11 @@
     background-image: url("../img/quotes.jpg");
     background-repeat: no-repeat;
     background-size: contain;
+
+ /* @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/quotes@2x.jpg");
+    background-size: contain;
+  } */
   }
 
   &::before {

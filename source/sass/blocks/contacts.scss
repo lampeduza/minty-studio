@@ -42,20 +42,20 @@
   }
 
   &:first-child::before {
-    background-image: url("../img/icon/phone.png");
+    background-image: url("../img/icon/phone.svg");
     top: -5%;
   }
 
   &:nth-child(2)::before {
-    background-image: url("../img/icon/mail.png");
+    background-image: url("../img/icon/mail.svg");
     top: 10%;
   }
 
   &:last-child::before {
-    background-image: url("../img/icon/location.png");
+    background-image: url("../img/icon/location.svg");
     width: 7vw;
     height: 7vw;
-    left: -1%;
+    left: 0;
     top: -20%;
   }
 }
@@ -190,7 +190,6 @@
       width: 3vw;
       height: 3vw;
       top: -35%;
-      left: -1%;
     }
   }
 }

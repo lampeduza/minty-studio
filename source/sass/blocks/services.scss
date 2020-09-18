@@ -181,7 +181,16 @@
   }
 
   .services__img {
-    width: 50%
+    width: 80%;
+
+    &--advertising {
+      width: 95%;
+      margin-top: -27%;
+    }
+
+    &--create-logo {
+      margin-top: -10%;
+    }
   }
 
   .services__subtitle {
