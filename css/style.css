@@ -1,4 +1,5 @@
 /* @media */
+/* retina */
 html {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -309,7 +310,11 @@ picture {
     height: 15%;
     background-image: url("../img/quotes.jpg");
     background-repeat: no-repeat;
-    background-size: contain; }
+    background-size: contain;
+    /* @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/quotes@2x.jpg");
+    background-size: contain;
+  } */ }
   .about-us__studio-information::before {
     top: -9%;
     left: 2%; }
@@ -554,7 +559,12 @@ picture {
   .services__picture {
     margin-bottom: 5%; }
   .services__img {
-    width: 50%; }
+    width: 80%; }
+    .services__img--advertising {
+      width: 95%;
+      margin-top: -27%; }
+    .services__img--create-logo {
+      margin-top: -10%; }
   .services__subtitle {
     margin-bottom: 5%;
     font-size: 1.6vw;
@@ -889,16 +899,16 @@ picture {
     background-size: contain;
     background-repeat: no-repeat; }
   .contacts__item:first-child::before {
-    background-image: url("../img/icon/phone.png");
+    background-image: url("../img/icon/phone.svg");
     top: -5%; }
   .contacts__item:nth-child(2)::before {
-    background-image: url("../img/icon/mail.png");
+    background-image: url("../img/icon/mail.svg");
     top: 10%; }
   .contacts__item:last-child::before {
-    background-image: url("../img/icon/location.png");
+    background-image: url("../img/icon/location.svg");
     width: 7vw;
     height: 7vw;
-    left: -1%;
+    left: 0;
     top: -20%; }
 
 .contacts__number,
@@ -996,8 +1006,7 @@ picture {
     .contacts__item:last-child::before {
       width: 3vw;
       height: 3vw;
-      top: -35%;
-      left: -1%; } }
+      top: -35%; } }
 
 .feedback {
   padding: 10% 0 15% 0;
@@ -1125,7 +1134,7 @@ picture {
   display: block;
   width: 6vw;
   height: 6vw;
-  background-image: url("../img/icon/instagram.png");
+  background-image: url("../img/icon/instagram.svg");
   background-repeat: no-repeat;
   background-size: contain;
   margin-right: 2%; }
