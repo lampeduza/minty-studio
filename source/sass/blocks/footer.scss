@@ -82,4 +82,14 @@
   .footer {
     padding-top: 5%;
   }
+
+  .footer__wrapper {
+    width: 97%;
+    margin: 0 auto;
+  }
+
+  .footer__link,
+  .footer__social-text {
+    font-size: 1.6vw;
+  }
 }
