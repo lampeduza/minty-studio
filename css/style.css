@@ -36,7 +36,7 @@ picture {
   font-style: normal;
   font-weight: 400;
   font-display: swap;
-  src: url("../fonts/manrope_latin_cyrillic-regular.woff2") format("woff2"), url("../fonts/manrope_latin_cyrillic-regular.woff") format("woff"); }
+  src: url("../fonts/regular.woff2") format("woff2"), url("../fonts/regular.woff") format("woff"); }
 
 /* manrope bold (800) */
 @font-face {
@@ -44,7 +44,7 @@ picture {
   font-style: normal;
   font-weight: 800;
   font-display: swap;
-  src: url("../fonts/manrope_latin_cyrillic-800.woff2") format("woff2"), url("../manrope_latin_cyrillic-800.woff") format("woff"); }
+  src: url("../fonts/regular-800.woff2") format("woff2"), url("../fonts/regular-800.woff") format("woff"); }
 
 .visually-hidden {
   position: absolute;
@@ -82,7 +82,7 @@ picture {
 
 @media (min-width: 768px) {
   .button {
-    font-size: 4.5vw; } }
+    font-size: 4vw; } }
 
 @media (min-width: 1300px) {
   .button {
