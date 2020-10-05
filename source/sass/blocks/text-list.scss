@@ -7,10 +7,10 @@
   margin-bottom: 1%;
   font-size: 4vw;
   line-height: 1.3;
+}
 
-  &--marked {
-    color: rgb(255, 3, 3);
-  }
+.text-list__item-marked {
+  color: rgb(255, 3, 3);
 }
 
 @media (min-width: $tablet-width) {
